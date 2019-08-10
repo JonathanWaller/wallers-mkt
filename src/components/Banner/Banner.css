@@ -1,0 +1,19 @@
+.bannerMain {
+     height: 60vh;
+     width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: linear-gradient(
+      to right bottom,
+      rgba(230, 230, 230, 0.2),
+      rgba(230, 230, 230, 0.2)
+    ); */
+    /* url('../../assets/black-white-cover.jpg'); */
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  /* border: 1px solid red; */
+}
