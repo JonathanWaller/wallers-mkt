@@ -2,18 +2,21 @@
   background: #141414;
   height: 5vh;
   display: flex;
-
-  justify-content: flex-end;
   align-items: center;
+  justify-content: space-between;
+}
+
+.navLeft {
+  display: flex;
+}
+
+.navRight { 
+  display: flex;
 }
 
 .nav_linksWrapper {
   display: flex;
   margin-right: 20px;
-}
-
-.nav_linksWrapper a {
-  text-decoration: none;
 }
 
 #nav_link {

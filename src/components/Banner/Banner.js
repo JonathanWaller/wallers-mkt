@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import './Banner.css';
 
-function Banner ( props ) {
+const Banner = ( props ) => {
     console.log('PROPS IN BANNER: ', props)
     
-    let bannerImg = props.bannerImg;
-    console.log('FINAL IMAGE: ', bannerImg)
+    const bannerImg = require( props.bannerImg );
+    console.log('plz: ', props)
+    // const bannerImg = require( './../../assets/inspo3.jpg');
+    // console.log('FINAL IMAGE: ', bannerImg)
     return(
         <div>
-            {/* <img src={props.bannerImg} /> */}
-            {/* <img src={'../../assets/inspo3.jpg'} /> */}
-            <img  className='bannerMain' src={ require( './../../assets/inspo3.jpg')} />
-            {/* Error: Cannot find module './../../assets/inspo3.jpg'
-            <img  className='bannerMain' src={ require(bannerImg)} /> */}
-            {/* <img
-            <img src={"/images/resto.png"} />
-            <img src={require('/images/image-name.png')} /> */}
+            {/* <img  className='bannerMain' src={ require( './../../assets/inspo3.jpg')} /> */}
+            {/* <img  className='bannerMain' src={ bannerImg } /> */}
+            {/* <img src={"/images/resto.png"} />
+            <img src={require('/images/image-name.png')} /> */} */}
+            <img src={require( `${ props.bannerImg }` )} />
             
             Banner
+            {/* <img src={require( `${ props.imageSource }` )} alt={props.imageAlt} /> */}
         </div>
     )
 }

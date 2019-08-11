@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
 
-function Home () {
+const Home = () => {
     
     return(
         <div className='homeMain'>

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import Banner from '../Banner/Banner';
+// import Banner from '../Banner/Banner';
+import ContactBanner from '../Banner/ContactBanner';
 
-function Contact () {
+const Contact = () => {
     
     return(
         <div>
-            <Banner/>
+            {/* <Banner/> */}
+            <ContactBanner />
             Contact
         </div>
     )

@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-import Banner from '../Banner/Banner';
+// import Banner from '../Banner/Banner';
+import AboutBanner from '../Banner/AboutBanner';
 
-function About () {
+const About = () => {
     
     return(
         <div>
-            <Banner 
+            {/* <Banner 
+                // bannerImg='./../../assets/inspo3.jpg'
                 bannerImg='./../../assets/inspo3.jpg'
-            />
+            /> */}
+            <AboutBanner />
             About
         </div>
     )

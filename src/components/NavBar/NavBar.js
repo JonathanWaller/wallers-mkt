@@ -2,26 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-function NavBar() {
+const  NavBar = () => {
   return (
-    <div className="nav_wrapper">
-      <div className="nav_linksWrapper">
-        <Link to ='/'>
+    <div className='nav_wrapper'>
+      <div className='navLeft'>
+        
+        <Link to ='/' style={{textDecoration: 'none'}}>
             <div id="nav_link">Waller's Market</div>
         </Link>
-        <Link to="/">
-          <div id="nav_link">Home</div>
-        </Link>
-        <Link to="/about">
-          <div id="nav_link">About</div>
-        </Link>
-        <Link to="/history">
-          <div id="nav_link">History</div>
-        </Link>
-        <Link to="/contact">
-          <div id="nav_link">Contact</div>
-        </Link>
       </div>
+        <div className='navRight'>
+          <Link to="/" style={{textDecoration: 'none'}}>
+            <div id="nav_link">Home</div>
+          </Link>
+          <Link to="/about" style={{textDecoration: 'none'}}>
+            <div id="nav_link">About</div>
+          </Link>
+          <Link to="/history" style={{textDecoration: 'none'}}>
+            <div id="nav_link">History</div>
+          </Link>
+          <Link to="/contact" style={{textDecoration: 'none'}}>
+            <div id="nav_link">Contact</div>
+          </Link>
+        </div>
     </div>
   );
 }
